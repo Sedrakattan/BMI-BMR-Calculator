@@ -8,8 +8,10 @@ function BMI($weight,$heightCm){
     elseif ($bmi < 24.9) $bmiCategory = "Normal weight";
     elseif ($bmi < 29.9) $bmiCategory = "Overweight";
     else $bmiCategory = "Obese";
+    $BMI=['bmi'=>$bmi,'bmiCategory'=>$bmiCategory];
+    
 
-    return $bmiCategory;
+    return  $BMI;
 }
 
 function BMR($gender,$weight, $heightCm,$age){

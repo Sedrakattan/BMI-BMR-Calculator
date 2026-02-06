@@ -19,27 +19,20 @@
             <div>
                 <label class="block text-sm font-medium text-gray-700">الاسم</label>
                 <input type="text" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 border p-2">
-            </div>
-           <div>
-           <label class="block text-sm font-medium text-gray-700">الاسم</label>
-           <input type="text" name="name" value="<?= $_POST['name'] ?? '' ?>" class="mt-1 block w-full rounded-md border p-2">
-           <?php if (isset($errors['name'])): ?>
+                <?php if (isset($errors['name'])): ?>
            <p class="text-red-500 text-xs mt-1"><?= $errors['name'] ?></p>
            <?php endif; ?>
-           </div>
-
+            </div>
+          
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                     <label class="block text-sm font-medium text-gray-700">العمر </label>
                     <input type="number" name="age" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 border p-2">
-                </div> 
-                <div>
-           <label class="block text-sm font-medium text-gray-700">الاسم</label>
-           <input type="text" name="age" value="<?= $_POST['age'] ?? '' ?>" class="mt-1 block w-full rounded-md border p-2">
-           <?php if (isset($errors['age'])): ?>
+                      <?php if (isset($errors['age'])): ?>
            <p class="text-red-500 text-xs mt-1"><?= $errors['age'] ?></p>
            <?php endif; ?>
-           </div>
+                </div> 
+          
 
 
                 <div>
@@ -55,27 +48,20 @@
                 <div>
                     <label class="block text-sm font-medium text-gray-700">الطول (سم) </label>
                     <input type="number" step="0.1" name="height" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 border p-2">
-                </div>
-                 <div>
-           <label class="block text-sm font-medium text-gray-700">الاسم</label>
-           <input type="text" name="height" value="<?= $_POST['height'] ?? '' ?>" class="mt-1 block w-full rounded-md border p-2">
-           <?php if (isset($errors['height'])): ?>
+                      <?php if (isset($errors['height'])): ?>
            <p class="text-red-500 text-xs mt-1"><?= $errors['height'] ?></p>
            <?php endif; ?>
-           </div>
+                </div>
+                
 
 
                 <div>
                     <label class="block text-sm font-medium text-gray-700">الوزن (كجم) </label>
                     <input type="number" step="0.1" name="weight" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 border p-2">
-                </div>
-                <div>
-           <label class="block text-sm font-medium text-gray-700">الاسم</label>
-           <input type="text" name="weight" value="<?= $_POST['weight'] ?? '' ?>" class="mt-1 block w-full rounded-md border p-2">
-           <?php if (isset($errors['weight'])): ?>
+                      <?php if (isset($errors['weight'])): ?>
            <p class="text-red-500 text-xs mt-1"><?= $errors['weight'] ?></p>
            <?php endif; ?>
-           </div>
+                </div>
                 
             </div>
 

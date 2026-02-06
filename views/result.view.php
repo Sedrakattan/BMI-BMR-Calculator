@@ -12,8 +12,8 @@
         <div class="space-y-4">
             <div class="pb-4 border-b">
                 <p class="text-gray-600">مؤشر كتلة الجسم (BMI) </p>
-                <p class="text-3xl font-black text-indigo-600"><?= number_format($bmiValue, 1) ?></p>
-                <p class="text-sm font-bold text-indigo-400"><?= $bmiCategory ?> </p>
+                <p class="text-3xl font-black text-indigo-600"><?= number_format($BMI['bmi'], 1) ?></p>
+                <p class="text-sm font-bold text-indigo-400"><?=$BMI['bmiCategory']  ?> </p>
             </div>
 
             <div class="pb-4 border-b">

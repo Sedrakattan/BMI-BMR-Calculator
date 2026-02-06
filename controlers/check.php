@@ -1,6 +1,9 @@
 <?php 
 
-
+require_once __DIR__ . '/../core/validator.php';
+require_once __DIR__ . '/../core/function.php';
+use core\Validator;
+ 
 $bmi = $bmr = $dailyCalories = 0;
 $bmiCategory = "";
 $errors=[];
@@ -13,10 +16,11 @@ $errors=[];
     $heightCm = (float)$_POST['height']; 
     $activity = (float)$_POST['activity']; 
     $goal = $_POST['goal']; 
+
     
    $errors = Validator::validate($_POST);
    if (empty($errors)){
-    $bmiCategory=BMI($weight,$heightCm);
+    $BMI=BMI($weight,$heightCm);
     
     $dailyCalories= daily_calorie_intake($gender,$weight, $heightCm,$age,$activity, $goal);
     require "views/result.view.php";

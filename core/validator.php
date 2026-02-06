@@ -1,4 +1,5 @@
 <?php
+namespace core;
 class Validator {
 
     public static function validate($data) {
