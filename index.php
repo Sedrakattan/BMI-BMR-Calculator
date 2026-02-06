@@ -13,7 +13,7 @@ require "views/check.view.php";
 
 elseif($method=='POST'&& isset($_POST['calculate'])){
 
-  require "controlers/check.php";
+  require "controllers/check.php";
 
 }
 
